@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 350px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+
+input:hover,
+select:hover,
+button:hover {
+    transform: translateY(-3px);
+}
+
+button {
+    background-color: rgb(33, 119, 33);
+    color: white;
+}
+
