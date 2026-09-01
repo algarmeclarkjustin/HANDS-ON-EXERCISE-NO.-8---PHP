@@ -42,8 +42,8 @@
             </div>
 
             <div>
-                <label for="contact_num">Contact Number:</label>
-                <input type="tel" id="contact_num" name="contact_num" placeholder="Enter your Contact Number"pattern="[0-9+\-\s]+" required>
+                <label for="con_num">Contact Number:</label>
+                <input type="tel" id="con_num" name="con_num" placeholder="Enter your Contact Number"pattern="[0-9+\-\s]+" required>
                 
             </div>
 
