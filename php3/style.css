@@ -1,20 +1,21 @@
 body {
     margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
+    background: #f4f4f4;
 }
 
 .container {
-    width: 350px;
+    width: 420px;
+    margin: 40px auto 0;
     padding: 25px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.container h1 {
+.container h1,
+.table-section h2 {
     text-align: center;
 }
 
@@ -25,13 +26,14 @@ form div {
 label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input,
 select,
 button {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     transition: transform 0.2s ease;
 }
@@ -39,11 +41,82 @@ button {
 input:hover,
 select:hover,
 button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
-button {
+button,
+input[type="submit"] {
     background-color: rgb(33, 119, 33);
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-section {
+    width: 1100px;
+    max-width: 95%;
+    margin: 40px auto 50px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.success-message {
+    margin: 20px 0;
+    padding: 12px;
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#userTable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#userTable th,
+#userTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#userTable th {
+    background: #f0f0f0;
+}
+
+.action-btn,
+.cancel-btn {
+    display: inline-block;
+    margin: 2px;
+    padding: 7px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.cancel-btn {
+    margin-top: 12px;
+    background: #6c757d;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
