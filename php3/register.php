@@ -30,12 +30,7 @@ if(isset($_POST['submit'])) {
 }
 
 ?>
-
-<?php include './layout/head.php'; ?>
-    
-    <?php if($isSuccess ): ?>
+<?php if($isSuccess): ?>
         <h3>Record Successfully Inserted to Database</h3>
     <?php endif; ?>
-    
-    <a href="./">Back to Main Form</a>
-<?php include './layout/foot.php'; ?>
+        <a href="./">Back to Main Form</a>
