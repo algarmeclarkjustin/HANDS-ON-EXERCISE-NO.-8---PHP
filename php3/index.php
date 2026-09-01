@@ -10,7 +10,7 @@
     <div class="container">
         <h1>PHP Output 1</h1>
 
-        <form action="" method="POST">
+        <form action="register.php" method="POST">
             <div>
                 <label for="name">Name:</label>
                 <input id="name" name="name" placeholder="Enter your Name" required>
@@ -47,7 +47,7 @@
                 
             </div>
 
-            <button type="submit">Submit</button>
+            <input type="submit" name="submit" value="Submit">
         </form>
     </div>
 </body>
