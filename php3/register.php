@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
     $address = $_POST['address'];
     $contact_num = $_POST['contact_num'];
 
-    $sql = "INSERT INTO persons(person_name, person_age, person_gender, person_email, person_address, person_contact_num) VALUES('$name', '$age', '$gender', '$email', '$address', '$contact_num')";
+    $sql = "INSERT INTO users(name, age, gender, email, address, contact_num) VALUES('$name', '$age', '$gender', '$email', '$address', '$contact_num')";
 
     if($conn->query($sql) === TRUE) {
         $isSuccess = true;
